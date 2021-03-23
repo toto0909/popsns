@@ -52,10 +52,7 @@ class PasswordResetNotification extends Notification
     public function toMail($notifiable)
     {
         //==========ここから削除==========
-        return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+        
         //==========ここまで削除==========
         //==========ここから追加==========
         return $this->mail
